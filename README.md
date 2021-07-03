@@ -14,3 +14,7 @@ python train.py --train=data/atis/train --val=data/atis/valid --save=saved_model
 
 For evaluating:  
 python evaluate.py --model=saved_models/atis_max50_drop_ep30 --data=data/atis/test --batch=128 --pre_intents=pre_intents --pre_slots=pre_slots
+
+
+
+It's a revised version of the origin version
