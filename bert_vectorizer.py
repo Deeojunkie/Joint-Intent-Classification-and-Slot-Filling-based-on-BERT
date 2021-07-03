@@ -36,7 +36,7 @@ class BERTVectorizer:
         valid_positions = []
         ## # valid_positions:[1, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 0]
         for i, word in enumerate(words):
-            token = self.tokenizer.tokenize(word)
+            token = self.tokenizer.wordpiece_tokenizer.tokenize(word)
             tokens.extend(token)
             for i in range(len(token)):
                 if i == 0:
